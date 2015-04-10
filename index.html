@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Eliza : Experiments with natural language processing. ChicagoRuby Hack Night on Wed, 08Apr2015.">
+    <meta name="viewport" content="width=640">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
 
-    <title>Eliza</title>
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Eliza by RayHightower</title>
   </head>
 
   <body>
+    <a id="forkme_banner" href="https://github.com/RayHightower/eliza">View on GitHub</a>
+    <div class="shell">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/RayHightower/eliza">View on GitHub</a>
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Eliza</h1>
+            <h2>Experiments with natural language processing. ChicagoRuby Hack Night on Wed, 08Apr2015.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
 
-          <h1 id="project_title">Eliza</h1>
-          <h2 id="project_tagline">Experiments with natural language processing. ChicagoRuby Hack Night on Wed, 08Apr2015.</h2>
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/RayHightower/eliza/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/RayHightower/eliza/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/RayHightower/eliza/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/RayHightower/eliza/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
         <h3>
 <a id="welcome-to-the-eliza-project" class="anchor" href="#welcome-to-the-eliza-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the Eliza project.</h3>
 
@@ -39,6 +54,11 @@
 <div class="highlight highlight-bash"><pre>$ <span class="pl-c1">cd</span> your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages</pre></div>
+
+<h3>
+<a id="default-branch--master" class="anchor" href="#default-branch--master" aria-hidden="true"><span class="octicon octicon-link"></span></a>Default Branch = Master</h3>
+
+<p>I have switched the default branch back to <code>master</code>. Call it an experiment. Why do the instructions say that we should switch the default branch to <code>gh-pages</code> anyway? Instructions that skip the "why" behind the steps are incomplete, in my opinion. </p>
 
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
@@ -62,17 +82,21 @@ $ git checkout gh-pages</pre></div>
 
 <p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Eliza maintained by <a href="https://github.com/RayHightower">RayHightower</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/RayHightower">RayHightower</a> can be found on <a href="https://github.com/RayHightower/eliza">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
       </footer>
+
     </div>
 
     
-
   </body>
 </html>
